@@ -28,11 +28,14 @@
 This library is an extension of [web-ifc-three](https://github.com/IFCjs/web-ifc-three), which is the official `IFCLoader` for [THREE.js](https://github.com/mrdoob/three.js/). This doesn't only parse and generate the Three.js geometry of IFC models in JavaScript, but also provides multiple tools to easily build BIM tools, such as 3d dimensions, clipping planes, 2D plan navigation and generation, etc.
 
 <pre>
-⭐ This project reads IFC files, structures their data in memory and converts them to Three.js custom geometric 
-entities for display in any browser. Even though there are many libraries capable of parsing IFC formats, almost 
-all of them depend on communication with a server, with all the disadvantages that this entails. The development 
-of the parser entirely in JavaScript makes it possible to decentralise parsing, so that each client is able to 
-read an IFC file and display its geometry and parameters to the user on its own.
+⭐ This project reads IFC files, structures their data in memory and converts them
+to Three.js custom geometric entities for display in any browser. Even though there
+are many libraries capable of parsing IFC formats, almost all of them depend on 
+communication with a server, with all the disadvantages that this entails. 
+
+⭐The development of the parser entirely in JavaScript makes it possible to decentralise
+parsing, so that each client is able to read an IFC file and display its geometry and
+parameters to the user on its own.
 </pre>
 
 #
