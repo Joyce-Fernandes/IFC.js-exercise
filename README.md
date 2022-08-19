@@ -42,7 +42,9 @@ parameters to the user on its own.
 
 <strong>:crown: advantages</strong>
 
-<img src="https://img.shields.io/badge/-Read IFC-blue" alt="multiplatform"/> &nbsp; <img src="https://img.shields.io/badge/-3D geometry-blue" alt="3D geometry"/> &nbsp; <img src="https://img.shields.io/badge/-IFC properties-blue" alt="IFC properties"/> &nbsp; <img src="https://img.shields.io/badge/-multiplatform-blue" alt="multiplatform"/> &nbsp; <img src="https://img.shields.io/badge/-minimalistic-blue" alt="minimalistic"/> &nbsp; <img src="https://img.shields.io/badge/-web page-blue" alt="web page"/>
+<img src="https://img.shields.io/badge/-Read IFC-blue" alt="multiplatform"/> &nbsp; <img src="https://img.shields.io/badge/-3D geometry-blue" alt="3D geometry"/> &nbsp; <img src="https://img.shields.io/badge/-IFC properties-blue" alt="IFC properties"/> &nbsp; <img src="https://img.shields.io/badge/-multiplatform-blue" alt="multiplatform"/> &nbsp;  &nbsp; <img src="https://img.shields.io/badge/-web page-blue" alt="web page"/>
+
+<img src="https://img.shields.io/badge/-bim-blue" alt="bim"/> &nbsp; <img src="https://img.shields.io/badge/-architecture-blue" alt="architecture"/> &nbsp; <img src="https://img.shields.io/badge/-engineering-blue" alt="engineering"/> &nbsp; <img src="https://img.shields.io/badge/-construction-blue" alt="construction"/> &nbsp; <img src="https://img.shields.io/badge/-openbim-blue" alt="openbim"/> &nbsp; <img src="https://img.shields.io/badge/-ifc-blue" alt="ifc"/> &nbsp; <img src="https://img.shields.io/badge/-threejs-blue" alt="threejs"/>
 
 <br/>
 
