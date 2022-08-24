@@ -9,7 +9,7 @@ console.log(projectCards);
 
 const templateProjectCard = projectCards[0];
 
-const baseURL = './viewer.html';
+const baseURL = '../html/viewer.html';
 
 for(let project of projects) {
 
