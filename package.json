@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.cjs"
+    "start": "index.html",
+    "my_custom_start": "index.php"
 
   },
   "author": "",
