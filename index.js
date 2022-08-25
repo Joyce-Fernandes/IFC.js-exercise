@@ -6,9 +6,13 @@ import { fileURLToPath } from 'url'
 const initServer = () => {
   const port = 3000
 
+  console.log(port, 'port')
+
   const app = express()
 
   const __filename = fileURLToPath(import.meta.url);
+
+  console.log('__filename', __filename)
 
   const __dirname = path.dirname(__filename)
 
@@ -21,8 +25,12 @@ const initServer = () => {
   })
 
   app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: __dirname } )
+    console.log('before-render'. __dirname)
+
+    res.sendFile(path.join(__dirname, 'index.html'))
   })
 }
+
+console.log('before-func **********************')
 
 initServer()
