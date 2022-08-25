@@ -7,7 +7,7 @@ fs.readFile('./index.html', function (err, html){
     if (err) throw err;
 
     http.createServer(function(request, response){
-        response.writeHeader(200);
+        response.writeHeader(200, {"Content-Type": "application/javascript"});
         response.write(html);
         response.end();
     }).listen(PORT);
