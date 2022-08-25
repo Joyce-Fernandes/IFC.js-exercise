@@ -1,16 +1,26 @@
 import express from 'express'
 import { dirname } from 'path'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const port = 3000
+const initServer = () => {
+  const port = 3000
 
-const app = express()
+  const app = express()
 
-app.use(express.static(dirname('./')))
+  const __filename = fileURLToPath(import.meta.url);
 
-app.listen(port, () => {
-  console.log(`⚡ Joyce IFC Server ⚡`, port)
-})
+  const __dirname = path.dirname(__filename);
 
-app.get('/', (req, res) => {
-  res.sendFile('index.html', { root: './' })
-})
+  app.use(express.static(__dirname))
+
+  app.listen(port, () => {
+    console.log(`⚡ Joyce IFC Server ⚡`, port)
+  })
+
+  app.get('/', (req, res) => {
+    res.sendFile('index.html', { root: './' })
+  })
+}
+
+initServer()
