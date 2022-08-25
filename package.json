@@ -2,11 +2,12 @@
   "name": "ifc.js-three_exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "model_list.js",
+  "main": "index.html",
   "type": "module",
   "scripts": {
     "watch": "rollup -c -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
 
   },
   "author": "",
