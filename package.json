@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html",
+    "start": "node index.php",
     "my_custom_start": "node index.php"
 
   },
