@@ -2,6 +2,9 @@ import express from 'express'
 import { dirname } from 'path'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import dotenv from 'dotenv'
+
+dotenv.config({ path: '.env' })
 
 const initServer = () => {
   const port = 3000
@@ -14,7 +17,12 @@ const initServer = () => {
 
   console.log('__filename', __filename)
 
-  const __dirname = path.dirname(__filename)
+  console.log('.env', process.env.ROUTE_BASE)
+
+  const __dirname = path.dirname(`
+    ${process.env.ROUTE_BASE}
+    ${__filename}
+  `)
 
   console.log('__dirname', __dirname)
 
