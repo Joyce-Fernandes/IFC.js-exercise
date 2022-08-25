@@ -1,7 +1,7 @@
 var http = require("http");
 var fs = require("fs");
 
-const PORT = 8081
+const PORT = process.env.PORT || 8081
 
 fs.readFile('./index.html', function (err, html){
     if (err) throw err;
