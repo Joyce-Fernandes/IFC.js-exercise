@@ -57,6 +57,7 @@ Development:
 `npm run watch` for generating the build files with watch.
 `npm run dev` for running examples.
 
+
 Build:
 
 `npm run build` for generating the build files.
@@ -64,6 +65,11 @@ Build:
 Install:
 
 `npm install web-ifc-viewer` or `yarn add web-ifc-viewer`
+
+Getting started:
+
+`npm start`
+
 
 #
 
