@@ -114964,30 +114964,8 @@
       if (event.code === 'Delete') {
         viewer.removeClippingPlane();
       }
-      // if(event.code === "KeyO") {
-      //   viewer.context.getIfcCamera().toggleProjection();
-      // } if(event.code === "KeyN") {
-      //   viewer.context.ifcCamera.setNavigationMode(NavigationModes.FirstPerson);
-      // }  if(event.code === "KeyM") {
-      //   viewer.context.ifcCamera.setNavigationMode(NavigationModes.Orbit);
-      // }
-      // if(event.code === "KeyR") {
-      //   // saveAsImage();
-      //   viewer.context.renderer.usePostproduction = !viewer.context.renderer.usePostproduction;
-      // }
-      // if(event.code === "KeyC") {
-      //   const camera = viewer.context.ifcCamera;
-      //   camera.goTo(new Vector3(0, 20, 0), new Vector3(0,0,0));
-      // }
+     
     };
-
-    // function saveAsImage() {
-    //   const imgData = viewer.context.renderer.newScreenshot();
-    //   const img = document.createElement('img');
-    //   img.src = imgData;
-    //   document.body.appendChild(img);
-    // }
-
 
     window.onclick = async (event) => {
       const found = cast(event)[0];
