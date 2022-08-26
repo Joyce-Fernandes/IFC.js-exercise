@@ -114900,7 +114900,7 @@
     const globalConfig = {
       isProduction: true,
       urlRequest: function(){
-        return this.isProduction ? "https://periscoope.ibim.es:3589" : "http://localhost:8963"
+        
       }
     };
 
