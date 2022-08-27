@@ -246,21 +246,21 @@ table {
   width: 100%;
   bottom: 15px;
 }
-
 .button_tools {
-  height: 3rem;
-  margin: 0.5rem;
-  padding: 0.7rem;
+  margin-top: 1em;
+  margin-left: 2em;
+  padding: 0.5rem;
   font-size: 12px;
   text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
   font-weight: 500;
   color: #000;
-  background: white;
+  background: var(--translucent-white);
+  backdrop-filter: var(--blur-filter);
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
   display: flex;
@@ -269,9 +269,20 @@ table {
 }
 
 .button_tools:hover {
-  border: 2px solid black;
+  background-color: var(--light-blue);
+  box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
+  color: #fff;
+  fill: #fff;
+  transform: translateY(-7px);
 }
 .disabled {
   pointer-events: none;
   
+}
+.buttonActive {
+    filter: invert(75%);
+}
+#buttonTools img{
+  width: 42px; 
+
 }
