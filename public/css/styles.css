@@ -283,6 +283,9 @@ table {
     filter: invert(75%);
 }
 #buttonTools img{
-  width: 42px; 
+
+    max-width: 20px;
+    max-height: 20px;
+    margin: auto;
 
 }
