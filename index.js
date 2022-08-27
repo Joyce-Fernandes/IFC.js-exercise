@@ -35,7 +35,7 @@ const initServer = () => {
   app.get('/', (req, res) => {
     console.log('before-render'. __dirname)
 
-    res.sendFile(path.join(__dirname, 'index.html'))
+    res.sendFile(path.join(__dirname, './index.html'))
   })
 }
 
