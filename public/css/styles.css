@@ -88,7 +88,7 @@ ul,
 }
 .tab button {
   background-color: inherit;
-  font-size: 16px;
+  font-size: 14px;
   float: left;
   border: none;
   outline: none;
@@ -284,8 +284,7 @@ table {
 }
 #buttonTools img{
 
-    max-width: 20px;
-    max-height: 20px;
-    margin: auto;
-
+    max-width: 42px;
+    max-height: 42px;
+   
 }
