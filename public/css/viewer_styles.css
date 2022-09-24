@@ -201,7 +201,7 @@ ul,
     z-index: 999999999;
     margin-top: 1em;
     right: 1rem;
-    background-color: lightgray;
+    background-color: #f1f1f1;
     width: 30vw;
     max-height: 80vh;
     opacity: 0.7;
@@ -210,7 +210,6 @@ ul,
 .property {
     color: black;
     display: flex;
-    background-color: rgb(164, 165, 165);
     justify-content: center;
     cursor: move;
 }
