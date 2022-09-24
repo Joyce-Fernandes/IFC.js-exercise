@@ -115181,7 +115181,7 @@ function createComment() {
     const object = viewer.context.castRayIfc();
     const location = object.point;
 
-    const result = window.prompt("Creates Comment:");
+    const result = window.prompt("Write your comment 🖊:");
 
     const base = document.createElement("div");
     base.className = "base-label";
