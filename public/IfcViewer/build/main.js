@@ -95267,8 +95267,8 @@
             this.loader = new IFCLoader();
             this.setupThreeMeshBVH();
             this.visibility = new VisibilityManager(this.loader, this.context);
-            this.defSelectMat = this.initializeDefMaterial(0xff33ff, 0.3);
-            this.defPreselectMat = this.initializeDefMaterial(0xffccff, 0.5);
+            this.defSelectMat = this.initializeDefMaterial(0xffa500, 0.6);
+            this.defPreselectMat = this.initializeDefMaterial(0xffa500, 0.5);
             this.selectMat = context.options.selectMaterial || this.defSelectMat;
             this.preselectMat = context.options.preselectMaterial || this.defPreselectMat;
             this.preselection = new IfcSelection(context, this.loader, this.preselectMat);

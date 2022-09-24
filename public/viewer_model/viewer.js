@@ -76,13 +76,15 @@ const title = document.getElementById("title");
 title.innerText = currentProject.name;
 
 // Buttons
+
 const btnSpatialTree = document.getElementById("buttonTree");
-const btnMeasure = document.getElementById("buttonMeasure");
 const btnProperty = document.getElementById("buttonProperty");
+const btnMeasure = document.getElementById("buttonMeasure");
 const btnClipper = document.getElementById("buttonCut");
 const btnComment = document.getElementById("buttonComment");
 
 // spatial tree
+
 const ifcTree = document.getElementById("ifcTree");
 btnSpatialTree.onclick = () => {
   btnSpatialTree.classList.toggle("buttonActive");
