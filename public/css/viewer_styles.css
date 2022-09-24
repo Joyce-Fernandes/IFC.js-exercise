@@ -9,27 +9,28 @@
     --ifcJsColor: rgba(237, 164, 48, 0.895);
     --normal-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     --blur-filter: blur(8px);
-  }
+}
 
-html, body {
+html,
+body {
     overflow: hidden;
 }
 
 header {
-    
+
     color: var(--light-gray);
     padding: 1rem;
     display: flex;
     align-items: center;
     border-bottom: 1px solid gray;
-  }
-  
-  header *:last-child {
+}
+
+header *:last-child {
     margin-left: auto;
     color: var(--light-gray);
-  }
-  
-  header li {
+}
+
+header li {
     display: inline;
     list-style: none;
     cursor: pointer;
@@ -53,44 +54,23 @@ header {
     outline: none;
     align-items: center;
     width: fit-content;
-  }
-  
-  header li:hover {
+}
+
+header li:hover {
     background-color: var(--light-blue);
     box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
     color: #fff;
     fill: #fff;
     transform: translateY(-7px);
-  }
-  
-  header li:active {
-    transform: translateY(-1px);
-  }
-  
-  h2 {
-    font-size: 1rem;
-  }
-
-#file_input {
-    display: none;
 }
-.simple-card-container {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-  }
-  .simple-card {
-    margin: 1rem;
-    z-index: 1;
-    width: 190px;
-    padding: 1rem;
-    border-radius: 3px;
-    background: var(--translucent-white);
-    box-shadow: var(--normal-shadow);
-    backdrop-filter: var(--blur-filter);
-    text-align: center;
-  }
+
+header li:active {
+    transform: translateY(-1px);
+}
+
+h2 {
+    font-size: 1rem;
+}
 
 .hidden {
     display: none;
@@ -130,20 +110,22 @@ header {
 }
 
 .button_tools:hover {
-      background-color: var(--light-blue);
-  box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
-  color: #fff;
-  fill: #fff;
-  transform: translateY(-7px);
+    background-color: var(--light-blue);
+    box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
+    color: #fff;
+    fill: #fff;
+    transform: translateY(-7px);
 }
 
 /*Tree view: https://www.w3schools.com/howto/howto_js_treeview.asp*/
 
-.tree-menu h2, .property-menu h2 {
+.tree-menu h2,
+.property-menu h2 {
     text-align: center;
     font-size: 1rem;
     margin-top: 1em;
-   }
+}
+
 .tree-menu {
     position: absolute;
     opacity: 0.7;
@@ -153,14 +135,16 @@ header {
     left: 1rem;
     background-color: #f1f1f1;
     max-height: 80vh;
+    overflow-y: scroll;
 }
 
 li ul {
-    user-select:none;
+    user-select: none;
     cursor: pointer;
 }
 
-ul, #myUL {
+ul,
+#myUL {
     list-style-type: none;
 }
 
@@ -194,8 +178,8 @@ ul, #myUL {
     margin-left: 10px;
 }
 
-#viewer_container{
-    position:absolute;
+#viewer_container {
+    position: absolute;
     top: 4.3em;
     left: 0;
     outline: none;
@@ -212,21 +196,6 @@ ul, #myUL {
     opacity: 50%;
 }
 
-.ifcjs-dimension-preview {
-    width: 1rem;
-    height: 1rem;
-    background-color: #FFA50F;
-    border-radius: 1rem;
-    opacity: 0.5;
-}
-
-.ifcjs-dimension-label {
-    background-color: black;
-    color: white;
-    padding: 4px;
-    border-radius: 4px;
-}
-
 .property-menu {
     position: absolute;
     z-index: 999999999;
@@ -238,11 +207,11 @@ ul, #myUL {
     opacity: 0.7;
 }
 
-.property{
+.property {
     color: black;
     display: flex;
     background-color: rgb(164, 165, 165);
-    justify-content:center ;
+    justify-content: center;
     cursor: move;
 }
 
@@ -274,12 +243,13 @@ ul, #myUL {
 
 .delete-button:hover {
     cursor: pointer;
-    font-size:medium;
+    font-size: medium;
     font-weight: bold;
     color: red;
 }
 
-.label, #buttonTools title {
+.label,
+#buttonTools title {
     background: rgba(201, 180, 176, 0.6);
     padding: 8px;
     backdrop-filter: blur(8px);
@@ -287,4 +257,3 @@ ul, #myUL {
     pointer-events: all;
     word-wrap: break-word;
 }
-

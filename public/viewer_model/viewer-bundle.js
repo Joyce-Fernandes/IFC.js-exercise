@@ -121565,6 +121565,14 @@ if (currentProjectID === null) {
   loadIfc(modelUrl);
   btnTools.classList.remove("disabled");
 }
+// Get the current project
+
+const currentProject = projects.find(
+	(project) => project.id === currentProjectID
+  );
+  const projectURL = currentProject.url;
+  const title = document.getElementById("title");
+  title.innerText = currentProject.name;
 
 // Buttons
 

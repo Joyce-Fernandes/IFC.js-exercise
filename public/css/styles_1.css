@@ -199,7 +199,6 @@ header li:active {
   background: var(--translucent-white);
   box-shadow: var(--normal-shadow);
   backdrop-filter: var(--blur-filter);
-  cursor: pointer;
   text-align: center;
 }
 

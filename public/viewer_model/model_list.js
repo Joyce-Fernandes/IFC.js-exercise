@@ -5,6 +5,7 @@ const imgLoc = ['../static/model_01.png','../static/model_02.png','../static/mod
 // Get all cards
 const projectContainer = document.getElementById("projects-container");
 const projectCards = Array.from(projectContainer.children);
+console.log(projectCards);
 
 const templateProjectCard = projectCards[0];
 
@@ -13,7 +14,7 @@ const baseURL = './viewer.html';
 for(let project of projects) {
 
     // Create a new card
-    const newCard = templateProjectCard.cloneNode(true);
+    const newCard = templateProjectCard.cloneNode("true");
 
     // Add project name to card
     const cardTitle = newCard.querySelector('h2');
