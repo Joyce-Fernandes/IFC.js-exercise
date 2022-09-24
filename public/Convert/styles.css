@@ -52,7 +52,7 @@ h1{
 .basic-button {
     background-color: #F3F4F6;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 5px;
     border: none;
     transition: all 0.1s ease-in-out;
     box-shadow: 0 0 0 0 #e6e6e6;

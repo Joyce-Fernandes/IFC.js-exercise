@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/viewer_styles.css">
+    <link rel="stylesheet" href="/css/styles_1.css">
+    <title>IFC.js Crash Course</title>
+</head>
+<body>
+    <header>
+        <img class="spinning logo" src="/static/ifcjs-logo.svg" alt="IFC.js logo">
+        
+        <h3>IFC.js Crash Course</h3>
+        <div class="header-container">             
+          <nav>   
+            <li><a  href="/index.html">Home</a></li>
+                  <li><a  href="/viewer_model/list.html">Model list</a></li>
+                  <li><a  href="/Convert/index.html">Convert JSON</a></li>
+                  <li><a  href="/IfcViewer/index_web.html">IFC Viewer</a></li>
+                  <li><a href="/gis/index-map.html">3D GIS</a></li>                    
+          </nav>
+      </div>  
+    </header>
+    <br>
+  
+      <div class="simple-card-container">
+        <div class="simple-card" id="title">Example model</div>
+      </div>
+    <div id="viewer_container" frameborder="0"></div>
+    
+    <div class="button_container disabled" id="buttonTools">
+        <img src="/IfcViewer/resources/tree.svg" alt="" class="button_tools" id="buttonTree" title="IFC tree">
+        <img src="/IfcViewer/resources/menu.svg" alt="" class="button_tools" id="buttonProperty" title="Property Set">
+        <img src="/IfcViewer/resources/Measure.svg" alt="" class="button_tools" id="buttonMeasure" title="Measure">
+        <img src="/IfcViewer/resources/scissors.svg" alt="" class="button_tools" id="buttonCut" title="Clippng Plane: Select the element and press P">
+        <img src="/IfcViewer/resources/comments.svg" alt="" class="button_tools" id="buttonComment" title="Comment: Double click on the element">     
+    </div>
+    
+    <div class="tree-menu hidden" id="ifcTree" >
+        <h2>IFC Tree</h2>
+        <ul id="myUL">
+            <li id="tree-root"></li>
+        </ul>
+    </div>
+    <div class="property-menu hidden" id="PropertySet">
+        <div class="property">
+            <h2>Property Set</h2>
+            
+        </div>
+        <div class="property-item">
+            <div>Key</div>
+            <div class="property-value">Value</div>
+        </div>
+        <div id="property-menu"></div>
+    </div>
+    
+    <script type="module" src="./viewer-bundle.js"></script>
+</body>
+</html>

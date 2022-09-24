@@ -221,8 +221,8 @@ p {
 }
 
 .spinning_logo{
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     animation: animate1 8s forwards ease-in-out;
     animation-iteration-count: infinite;
     margin-left: 50px;

@@ -23,7 +23,7 @@
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a  href="/html/list.html">Model list</a></li>
+                <li><a  href="/viewer_model/list.html">Model list</a></li>
                 <li><a href="/Convert/index.html">Convert JSON</a></li>
                 <li><a href="/gis/index-map.html">3D GIS</a></li>
                 
@@ -34,38 +34,18 @@
   <br>
 
     <aside class="side-menu" id="side-menu-left">
-      <!-- <button  class="btn-tool" style="border: none;margin-left: 1.5vw" onclick="categoriesShow()" data-toggle="tooltip"
-      data-placement="bottom" title="Storeys">
- <span class="bi bi-layers-fill"></span> -->
-<!-- </button> -->
+     
 
     </aside>
-    <!-- <button id="clickme">Download some Excel file</button> -->
+    <div class="ifc-tree-menu hidden" id="ifcTree">
+      <ul id="myUL">
+          <li id="tree-root"></li>
+      </ul>
+  </div>
+    
     
     <div id="viewer-container"></div>
-    <!-- <div id="checkboxes">
-      <div>
-          <input checked="true" id="IFCWALL" type="checkbox">
-          Walls
-      </div>
-      <div>
-          <input checked="true" id="IFCSLAB" type="checkbox">
-          Slabs
-      </div>
-      <div>
-          <input checked="true" id="IFCROOF" type="checkbox">
-          Roofs
-      </div>
-      <div>
-          <input checked="true" id="IFCBEAM" type="checkbox">
-          Beam
-      </div>
-      <div>
-          <input checked="true" id="IFCCOLUMN" type="checkbox">
-          Column
-      </div>
 
-  </div> -->
 
 <div class = "color-wrapper" id = "colorbar" style="visibility: hidden"></div>
 

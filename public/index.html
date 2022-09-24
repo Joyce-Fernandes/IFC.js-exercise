@@ -77,7 +77,7 @@
                                 <div class="grid__item" id="team-link">
                                     <div class="product">
                                         <div class="tm-nav-link">
-                                            <img class="spinning_logo" src="/static/ifcjs-logo.svg" alt="IFC.js logo">
+                                            <img class="spinning_logo" src="/static/ifcjs-logo.svg"  alt="IFC.js logo">
                                             <span class="tm-nav-text">IFC Viewer</span>
                                             <div class="product__bg"></div>
                                         </div>
@@ -90,20 +90,17 @@
                                                 </div>
                                                 <div class="row tm-reverse-sm">
                                                     <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">This library is an extension of web-ifc-three,
-                                                            which is the official IFCLoader for THREE.js. </p>
-                                                        <p class="mb-4">This doesn't only parse and generate the
-                                                            Three.js geometry of IFC models in JavaScript, but also
-                                                            provides multiple tools to easily build BIM tools,</p>
-                                                        <p class="mb-5">such as 3d dimensions, clipping planes, 2D plan
-                                                            navigation and generation, etc.</p>
+                                                        <p class="mb-4">	
+                                                            View the 3D BIM or IFC model in Real-Time Rendering, Augmented Reality or Virtual Reality online. </p>
+                                                        <p class="mb-4"> </p>
+                                                        <p class="mb-5"></p>
 
                                                         <div
                                                             class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
                                                             <iframe
                                                                 src="https://ifcjs.github.io/ifcjs-crash-course/exercises/WIV/hello-world/"
                                                                 frameborder="0"
-                                                                style="width: 35vw; height: 35vh; overflow: hidden;"></iframe>
+                                                                style="width: 35vw; height: 51.5vh; overflow: hidden;"></iframe>
                                                         </div>
                                                         <a href="/IfcViewer/index_web.html" class="btn tm-btn-gray">See
                                                             More</a>
@@ -140,7 +137,7 @@
                                                     <div class="col-12">
                                                         <div class="p-sm-4 p-2 tm-img-container">
                                                             <div class="tm-img-slider" id="tmImgSlider">
-                                                                <a href="html/list.html"
+                                                                <a href="/viewer_model/list.html"
                                                                     class="btn tm-btn-gray">Projects</a>
                                                             </div>
                                                             <div class="tm-img-slider" id="tmImgSlider">
@@ -171,25 +168,28 @@
                                                 </div>
                                                 <div class="row mb-4">
                                                     <div class="col-12">
-                                                        <p>3D Viewer displays the scene with default 3D navigation
-                                                            tools,</p>
-                                                        <p> including zoom, pan, rotation controls.</p>
-                                                        <p> Mapbox: Rotate map camera around a highlighted 3D building.
-                                                        </p>
-
+                                                        <p>3D Viewer displays the scene with default 3D navigation tools, including zoom, pan, rotation controls.
+                                                        
+                                                         Mapbox: Rotate map camera around a highlighted 3D building.</p>
+                                               
                                                     </div>
                                                 </div>
+                                                
+                                                        <div
+                                                            class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
+                                                            <iframe
+                                                                src="/gis/map.mp4"
+                                                                frameborder="0"
+                                                                style="width: 35vw; height: 51.5vh; overflow: hidden;"></iframe>
+                                                        </div>
+                                                        <a href="/gis/index-map.html" class="btn tm-btn-gray">See
+                                                            More</a>
+                                                    </div>
 
-                                                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                    <iframe src="/gis/mapbox.mp4" frameborder="0"
-                                                        style="width: 30vw; height: 55vh; overflow: hidden;"></iframe>
                                                 </div>
-                                                <a href="/gis/index-map.html" class="btn tm-btn-gray">See
-                                                    More</a>
+                                            
                                             </div>
-
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -197,15 +197,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <footer>
-        <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2022</span> IFC.js
-            Crash Course.
+            <footer>
+                <p class="small tm-copyright-text">Copyright &copy; <span class="tm-current-year">2022</span> IFC.js
+                    Crash Course.
 
-            | Joyce F. da Silva</p>
-    </footer>
-    </div> <!-- .tm-main-content -->
+                    | Joyce F. da Silva</p>
+            </footer>
+        </div> <!-- .tm-main-content -->
     </div>
     <!-- load JS -->
     <script src="webpage/js/jquery-3.2.1.slim.min.js"></script>

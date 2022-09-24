@@ -114911,17 +114911,24 @@
     window.ifcModels = ifcModels;
 
     const ifcLoader = viewer.IFC.loader;
+	
+		
     const ifcManager = ifcLoader.ifcManager;
 
     viewer.addAxes();
     viewer.addGrid();
 
+
     viewer.IFC.setWasmPath('files/');
+	
     viewer.IFC.loader.ifcManager.applyWebIfcConfig({
       COORDINATE_TO_ORIGIN: true,
       USE_FAST_BOOLS: false
     });
     viewer.IFC.loader.ifcManager.useWebWorkers(true, 'files/IFCWorker.js');
+	   
+		
+		
 
 
     //Setup loader
@@ -114944,7 +114951,7 @@
 
       await viewer.IFC.loadIfc(event.target.files[0], true);
       overlay.classList.add("hidden");
-
+	  
      
 
       var ifcName = event.target.files[0].name;
@@ -115012,17 +115019,110 @@
       viewer.clipper.createPlane();
     };
 
-    const loadButton = createSideMenuButton('./resources/open.svg');
+    const loadButton = createSideMenuButton('./resources/open.svg' );
+	
+
     loadButton.addEventListener('click', () => {
       loadButton.blur();
       inputElement.click();
     });
-	
+	// const btnSpatialTree = createSideMenuButton('./resources/tree.svg');
+    // btnSpatialTree.addEventListener('click', () => {
+	// 	btnSpatialTree.blur();
+	// 	const ifcTree = document.getElementById("ifcTree");
+	// 	btnSpatialTree.onclick = () => {
+	// 	  btnSpatialTree.classList.toggle("buttonActive");
+	// 	  ifcTree.classList.toggle("hidden");
+	// 	};
+		
+	// 	// Tree view
+		
+	// 	const toggler = document.getElementsByClassName("caret");
+	// 	for (let i = 0; i < toggler.length; i++) {
+	// 	  toggler[i].onclick = () => {
+	// 		toggler[i].parentElement
+	// 		  .querySelector(".nested")
+	// 		  .classList.toggle("active");
+	// 		toggler[i].classList.toggle("caret-down");
+	// 	  };
+	// 	}
+		
+	// 	// Spatial tree menu
+		
+	// 	function createTreeMenu(ifcProject) {
+	// 	  const root = document.getElementById("tree-root");
+	// 	  removeAllChildren(root);
+	// 	  const ifcProjectNode = createNestedChild(root, ifcProject);
+	// 	  ifcProject.children.forEach((child) => {
+	// 		constructTreeMenuNode(ifcProjectNode, child);
+	// 	  });
+	// 	}
+		
+	// 	function nodeToString(node) {
+	// 	  return `${node.type} - ${node.expressID}`;
+	// 	}
+		
+	// 	function constructTreeMenuNode(parent, node) {
+	// 	  const children = node.children;
+	// 	  if (children.length === 0) {
+	// 		createSimpleChild(parent, node);
+	// 		return;
+	// 	  }
+	// 	  const nodeElement = createNestedChild(parent, node);
+	// 	  children.forEach((child) => {
+	// 		constructTreeMenuNode(nodeElement, child);
+	// 	  });
+	// 	}
+		
+	// 	function createNestedChild(parent, node) {
+	// 	  const content = nodeToString(node);
+	// 	  const root = document.createElement("li");
+	// 	  createTitle(root, content);
+	// 	  const childrenContainer = document.createElement("ul");
+	// 	  childrenContainer.classList.add("nested");
+	// 	  root.appendChild(childrenContainer);
+	// 	  parent.appendChild(root);
+	// 	  return childrenContainer;
+	// 	}
+		
+	// 	function createTitle(parent, content) {
+	// 	  const title = document.createElement("span");
+	// 	  title.classList.add("caret");
+	// 	  title.onclick = () => {
+	// 		title.parentElement.querySelector(".nested").classList.toggle("active");
+	// 		title.classList.toggle("caret-down");
+	// 	  };
+	// 	  title.textContent = content;
+	// 	  parent.appendChild(title);
+	// 	}
+		
+	// 	function createSimpleChild(parent, node) {
+	// 	  const content = nodeToString(node);
+	// 	  const childNode = document.createElement("li");
+	// 	  childNode.classList.add("leaf-node");
+	// 	  childNode.textContent = content;
+	// 	  childNode.setAttribute("id", node.expressID);
+	// 	  parent.appendChild(childNode);
+		
+	// 	  childNode.onclick = () => {
+	// 		viewer.IFC.selector.pickIfcItemsByID(0, [node.expressID]);
+	// 	  };
+	// 	  childNode.onmousemove = () => {
+	// 		viewer.IFC.selector.prepickIfcItemsByID(0, [node.expressID]);
+	// 	  };
+	// 	}
+		
+	// 	function removeAllChildren(element) {
+	// 	  while (element.firstChild) {
+	// 		element.removeChild(element.firstChild);
+	// 	  }
+	// 	}
+		
 		
     // });
 
-	// window.onmousemove = () => viewer.IFC.selector.prePickIfcItem();
-	const toggleButton = createSideMenuButton('./resources/boxes.svg');
+	 window.onmousemove = () => viewer.IFC.selector.prePickIfcItem();
+	const toggleButton = createSideMenuButton('./resources/3d.png');
 	document.getElementById("toggle-perspective")
 	toggleButton.addEventListener('click',()=> {
 		toggleButton.blur();
@@ -115070,7 +115170,7 @@ btnMeasure.onclick = () => {
 };
 		
     });
-	const btnComment = createSideMenuButton('./resources/pencil.svg');
+	const btnComment = createSideMenuButton('./resources/comment.svg');
     btnComment.addEventListener('click', () => {
       btnComment.blur();
       // button Comment & measure
@@ -115119,8 +115219,8 @@ btnComment.onclick = () => {
 });
     
 
-    const xmlHulcButton = createSideMenuButton('./resources/xml.png');
-    xmlHulcButton.addEventListener('click', async() => {
+    const xmlHulcButton = createSideMenuButton('./resources/xml.png');  
+    xmlHulcButton.addEventListener('click',  async() => {
       var allWalls = [];
 
       var jsonHulc = {    

@@ -8,14 +8,17 @@
   --translucent-white: rgba(255, 255, 255, 0.7);
   --normal-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   --blur-filter: blur(8px);
-}
- .ifc-tree-menu h2, .properties h2 {
-  text-align: center;
-  font-size: 1rem;
-  margin-top: 1em;
+
 }
 
 /*Tree view: https://www.w3schools.com/howto/howto_js_treeview.asp*/
+
+
+.ifc-tree-menu h2, .properties h2 {
+ text-align: center;
+ font-size: 1rem;
+ margin-top: 1em;
+}
 
 .ifc-tree-menu {
   position: absolute;
@@ -88,7 +91,7 @@ ul,
 }
 .tab button {
   background-color: inherit;
-  font-size: 14px;
+  
   float: left;
   border: none;
   outline: none;
@@ -179,8 +182,8 @@ table {
   color: white;
 }
 
-#viewer-container {
-  position: fixed;
+#viewer_container {
+  
   top: 0;
   left: 0;
   outline: none;
@@ -206,17 +209,6 @@ table {
   border-radius: 4px;
 }
 
-#instructions {
-  z-index: 100;
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgb(60 179 113 / 50%);
-  backdrop-filter: blur(3px);
-  padding: 5px;
-  border: 1px solid white;
-  border-radius: 5px;
-}
 #file-input {
   border: none;
   border-radius: var(--border-radius);
@@ -246,45 +238,10 @@ table {
   width: 100%;
   bottom: 15px;
 }
-.button_tools {
-  margin-top: 1em;
-  margin-left: 2em;
-  padding: 0.5rem;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #000;
-  background: var(--translucent-white);
-  backdrop-filter: var(--blur-filter);
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-}
-
-.button_tools:hover {
-  background-color: var(--light-blue);
-  box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
-  color: #fff;
-  fill: #fff;
-  transform: translateY(-7px);
-}
 .disabled {
   pointer-events: none;
   
 }
 .buttonActive {
     filter: invert(75%);
-}
-#buttonTools img{
-
-    max-width: 42px;
-    max-height: 42px;
-   
 }
